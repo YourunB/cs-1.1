@@ -1,6 +1,12 @@
 ﻿static void InArray<T>(T[] i) // так будет работать любой массив
 {
-    Console.WriteLine(i.Length);
+    foreach (var item in i)
+    {
+        if (item != null)
+        {
+            Console.WriteLine(item);
+        }
+    }
 }
 
 var а = new[] { 1, 10, 100, 1000 };
