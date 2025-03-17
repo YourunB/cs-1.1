@@ -1,4 +1,9 @@
-﻿static void Main()
+﻿static void InArray(int[] i)
+{
+    Console.WriteLine(" [0] = {0} [1] = {1}", i[0], i[1]);
+}
+
+static void Main()
 {
     int[][,] imyJaggedArray1 = new int[3][,]
     {
