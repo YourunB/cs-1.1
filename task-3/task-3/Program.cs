@@ -7,9 +7,9 @@
         new int[,] { {0,0}, {0,0}, {0,0} }
     };
 
-    Console.WriteLine(imyJaggedArray1.Rank);
-    Console.WriteLine(imyJaggedArray1.Length);
-    Console.WriteLine("{0}", imyJaggedArray1[0][1, 0]);
+    Console.WriteLine(imyJaggedArray1.Rank); // размерность созданного массива
+    Console.WriteLine(imyJaggedArray1.Length); // число элементов в созданном массиве
+    Console.WriteLine("{0}", imyJaggedArray1[0][1, 0]); // вывод значения элемента [1,0] из первого элемента одномерного массива
 }
 
 Main();
