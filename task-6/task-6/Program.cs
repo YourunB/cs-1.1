@@ -1,4 +1,6 @@
-﻿int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
+﻿//------------------------------------------------------LINQ-запрос-----------------------------------------------------------
+
+int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
 string[] words = { "aPPLE", "ORangE", "cHeRry" };
 
 var numQuery =
@@ -13,3 +15,8 @@ var varWords =
     select new { Upper = word.ToUpper(), Lower = word.ToLower() };
 
 foreach (var ul in varWords) { Console.WriteLine("Заглавные буква: {0}, Строчные буквы: {1}", ul.Upper, ul.Lower); }  // вывод слов в верхнем и нижнем регистре
+
+//---------------------------------------------------Лямбда-выражения---------------------------------------------------------
+
+Func<int, int> square = x => x * x; // объявление лямбда-выражения
+Console.WriteLine(square(2));
