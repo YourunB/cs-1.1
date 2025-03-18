@@ -12,5 +12,10 @@ namespace task_5
         {
             return "Параметр I=  " + System.Convert.ToString(I);
         }
+
+        public int m2(string s)
+        {
+            return System.Convert.ToInt32(s);
+        }
     }
 }
