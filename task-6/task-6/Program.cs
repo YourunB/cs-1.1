@@ -35,3 +35,17 @@ foreach (var i in nums) { System.Console.Write(i + " "); }
 long?[] longs = { null, 20006L, 50L, 255433101075L };
 double? average = longs.Average(); // рвссчитать среднее значение в массиве, метод Average
 Console.WriteLine("The average is {0}", average);
+
+string[] strs = { "apple", "mango", "orange", "grape" };
+var query = strs.Select((s, index) => new { index, str = s.Substring(0, index) }); // Substring - функция преобразования
+
+foreach (var obj in query)
+{
+    Console.WriteLine($"{obj}");
+}
+
+/*
+IEnumerable<int> squares = Enumerable.Range(1, 10).Select(x => x + x); // метод Range создает набор значений от 1 до 10
+// Метод Select последовательно получает каждое значение из созданного набора и выполняет для него операцию x+x
+foreach (int num in squares) { Console.WriteLine(num); }
+*/
